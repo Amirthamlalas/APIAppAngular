@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ViewPassengerDataComponent } from './view-passenger-data/view-passenger-data.component';
+import { UsPublicDataComponent } from './us-public-data/us-public-data.component';
+import { PublicAPILinksComponent } from './public-apilinks/public-apilinks.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ViewPassengerDataComponent,
+    UsPublicDataComponent,
+    PublicAPILinksComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
