@@ -9,6 +9,31 @@ import { UsPublicDataComponent } from './us-public-data/us-public-data.component
 import { PublicAPILinksComponent } from './public-apilinks/public-apilinks.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myroute:Routes=[
+  {
+    path:"",
+    component:ViewPassengerDataComponent
+  },
+  {
+    path:"userinfo",
+    component:UserInfoComponent
+  },
+  {
+    path:"usdata",
+    component:UsPublicDataComponent
+  },
+  {
+    path:"apilink",
+    component:PublicAPILinksComponent
+  },
+  {
+    path:"productlist",
+    component:ProductListComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -17,12 +42,14 @@ import { ProductListComponent } from './product-list/product-list.component';
     UsPublicDataComponent,
     PublicAPILinksComponent,
     UserInfoComponent,
-    ProductListComponent
+    ProductListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myroute)
   ],
   providers: [],
   bootstrap: [AppComponent]
