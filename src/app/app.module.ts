@@ -8,6 +8,7 @@ import { ViewPassengerDataComponent } from './view-passenger-data/view-passenger
 import { UsPublicDataComponent } from './us-public-data/us-public-data.component';
 import { PublicAPILinksComponent } from './public-apilinks/public-apilinks.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserInfoComponent } from './user-info/user-info.component';
     ViewPassengerDataComponent,
     UsPublicDataComponent,
     PublicAPILinksComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
