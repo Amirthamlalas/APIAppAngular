@@ -11,6 +11,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UserDataComponent } from './user-data/user-data.component';
 
 const myroute:Routes=[
   {
@@ -32,6 +33,10 @@ const myroute:Routes=[
   {
     path:"productlist",
     component:ProductListComponent
+  },
+  {
+    path:"userdata",
+    component:UserDataComponent
   }
 ]
 
@@ -43,7 +48,8 @@ const myroute:Routes=[
     PublicAPILinksComponent,
     UserInfoComponent,
     ProductListComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
