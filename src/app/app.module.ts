@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserDataComponent } from './user-data/user-data.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { QuotesAppComponent } from './quotes-app/quotes-app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const myroute:Routes=[
   {
@@ -67,7 +68,8 @@ const myroute:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
