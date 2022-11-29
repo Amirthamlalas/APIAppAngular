@@ -14,14 +14,18 @@
                             <th scope="col">Trips</th>
                             <th scope="col">Airline</th>
                             <th scope="col">Country</th>
+                            <th scope="col">Logo</th>
+
                           </tr>
                         </thead>
                         <tbody>
                           <tr *ngFor="let i of passenger.data">
                             <td>{{i.name}}</td>
                             <td>{{i.trips}}</td>
-                            <td>{{i.airline.name}}</td>
-                            <td>{{i.airline.country}}</td>
+                            <td>{{i.airline[0].name}}</td>
+                            <td>{{i.airline[0].country}}</td>
+                            <td>{{i.airline[0].logo}}</td>
+
                           </tr>
                           
                         </tbody>
